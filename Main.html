@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+  <head>
+  </head>
+      # hace parte del encabezado de la página el cual no es posible verlo dentro de la navegación y es para la descripción de la misma para ser encontrada fácilmente por los motores de renderizado o motores de búsqueda.
+  <body>
+  </body>
+      # hace parte del cuerpo de la página, lugar donde se incluye toda la información que queremos que sea visualizada por las personas que ingresan a los navegadores en busca de información
+</html>
+
+
+La primera línea está reservada al DOCTYPE (tipo de documento), después viene el documento HTML, que está dividido en dos secciones: ''head'' (cabecera) y ''body'' (cuerpo).
+
+==DOCTYPE==
+Define el tipo de documento.<br>
+Este elemento, que muchos webmasters obvian (incorrectamente), le indica al navegador la versión y tipo de HTML empleado en el documento. De esta forma, el navegador usará el modelo de renderización adecuado al tipo de documento.
+
+Para HTML 4.01 existen 3 tipos de DOCTYPE:
+
+*'''strict''': este DOCTYPE es el que contiene la definición de HTML recomendada por el W3C.
+ <pre><nowiki><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd"></nowiki></pre>
+*'''transitional''': este DOCTYPE es igual al ''strict'', más algunos elementos y atributos antiguos que han quedado obsoletos, pero que se conservan para mantener la compatibilidad.
+<pre><nowiki><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd"></nowiki></pre>
+*'''frameset''': este DOCTYPE es igual al ''transitional'' más los elementos específicos para la creación de marcos.
+<pre><nowiki><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+        "http://www.w3.org/TR/html4/frameset.dtd"></nowiki></pre>
+
+Para HTML 5 existe un formato unificado:
+<pre><nowiki><!DOCTYPE html></nowiki></pre>
+De no poner el DOCTYPE, el navegador interpretará el código HTML escrito tal y como le parezca mejor. Se obtendrán resultados imprevistos e inconsistentes que podrían variar incluso entre dos versiones de un mismo navegador. Por lo tanto, lo mejor es poner '''siempre''' el DOCTYPE correcto.
+
+==Elemento '''html'''==
+Delimita el documento HTML, indicando al navegador el comienzo y fin del mismo.<br>
+Sus etiquetas son: <code><html></code> (siempre al comienzo despues del DOCTYPE) y <code></html></code> (siempre al terminar el documento)<br>
+Ambas etiquetas son opcionales pero se recomienda usarlas de todos modos.
+
+==Elemento '''head'''==
+En inglés, '''head''' significa ''cabeza'' y su función es delimitar la cabecera del documento.<br>
+Sus etiquetas son: <code><head></code> y <code></head></code>. Al igual que las etiquetas <code><html></html></code>, ambas son opcionales pero se recomienda su uso.<br>
+La cabecera es la sección apropiada para incluir información sobre el documento, la mayoría de la cual no será mostrada a los lectores. Para incluir esta información tenemos diversos elementos, de momento solo comentaremos el más importante:
+
+===Elemento '''title'''===
+Indica el título del documento. En general, los navegadores modernos lo muestran en la barra de título de la ventana.<br>
+Sus etiquetas son: <code><title></code> y <code></title></code> (ambas obligatorias), por ejemplo:
+
+<source lang="html4strict">
+<html>
+  <head> 
+    <title>Turismo en sudamérica</title>
+  </head>
+  ...
+</html>
